@@ -8,6 +8,12 @@ var reusable = function () {
    browser.get(browser.baseUrl);
   };
 
+  this.clickByBtnName = function(btnName) {  
+    this.btnName = btnName;
+    let button = element(by.buttonText(btnName));
+    button.click();
+  }
+
   this.customerLogin = function () {
     this.get();
     homepg.customerLogin();
@@ -15,11 +21,12 @@ var reusable = function () {
     cstmrpg.login();
   }
   
-   this.clickByBtnName = function(btnName) {  
-    this.btnName = btnName;
-    let button = element(by.buttonText(btnName));
-    button.click();
+  this.managerLogin = function () {
+    this.get();
+    this.clickByBtnName('Bank Manager Login');
   }
+
+  
 
 
 };

@@ -14,7 +14,7 @@ exports.config = {
 
   // Spec patterns are relative to the current working directory when
   // protractor is called.
-  specs: ['../test/specs/customerSpec.js'],
+  specs: ['../test/specs/*.js'],
 
   //Base URL
   baseUrl: 'http://www.way2automation.com/angularjs-protractor/banking/#/login',

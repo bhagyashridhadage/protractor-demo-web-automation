@@ -1,6 +1,5 @@
 let reusable = require('../reusable/reusable.js');
 let cstmrpg = require('../pageObject/customerPage.js');
-let homepg = require('../pageObject/homePage.js');
 
 describe("Customer", function () {
 
